@@ -1,0 +1,30 @@
+
+.Avatar {
+  display: flex;
+  position: relative;
+  height: 25vmin;
+  pointer-events: none;
+  justify-content: center;
+  margin: auto;
+  padding: 20px;
+  z-index: 5;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Avatar:hover {
+    animation: Avatar-spin infinite 20s linear;
+  }
+}
+
+.Avatar:hover {
+  animation: Avatar-spin infinite 20s linear;
+}
+
+@keyframes Avatar-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
